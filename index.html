@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://merser.top/2017/10/13/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://merser.top/2018/09/20/Python学习心得--持续更新/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="赵一屺">
@@ -281,7 +281,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/13/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2018/09/20/Python学习心得--持续更新/" itemprop="url">未命名</a></h1>
         
 
         <div class="post-meta">
@@ -293,8 +293,204 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-13T18:25:36-07:00">
-                2017-10-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-20T16:10:00+08:00">
+                2018-09-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="python学习心得–持续更新"><a href="#python学习心得–持续更新" class="headerlink" title="python学习心得–持续更新"></a><strong>python学习心得–持续更新</strong></h1><blockquote>
+<p>为了第一次的Python等考真是强势的日撸一千五代码….下面总结一下学习心得。</p>
+</blockquote>
+<p>###0x1 学习网站<br>首先推荐一下官方学习网站</p>
+<p><a href="https://www.python123.io" target="_blank">https://www.python123.io</a></p>
+<p>python官方网站</p>
+<p><a href="https://www.python.org/" target="_blank">https://www.python.org/</a></p>
+<p>###0x2 环境配置<br>推荐在Python123下载windows Python3.5.3(32-bit)，考试环境为Python3.5.3，在IDLE环境下进行练习。</p>
+<p>###0x3 Python列表(List)<br>序列是Python中最基本的数据结构。序列中的每个元素都分配一个数字 - 它的位置，或索引，第一个索引是0，第二个索引是1，依此类推。</p>
+<p>Python有6个序列的内置类型，但最常见的是列表和元组。</p>
+<p>序列都可以进行的操作包括索引，切片，加，乘，检查成员。</p>
+<p>此外，Python已经内置确定序列的长度以及确定最大和最小的元素的方法。</p>
+<p>列表是最常用的Python数据类型，它可以作为一个方括号内的逗号分隔值出现。</p>
+<p>列表的数据项不需要具有相同的类型</p>
+<p>创建一个列表，只要把逗号分隔的不同的数据项使用方括号括起来即可。如下所示：<br><code>list1 = [&#39;physics&#39;, &#39;chemistry&#39;, 1997, 2000] list2 = [1, 2, 3, 4, 5 ] list3 = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]</code></p>
+<p>与字符串的索引一样，列表索引从0开始。列表可以进行截取、组合等。</p>
+<p>#####访问列表中的值<br>使用下标索引来访问列表中的值，同样你也可以使用方括号的形式截取字符，如下所示：</p>
+<p><code>list1 = [&#39;physics&#39;, &#39;chemistry&#39;, 1997, 2000]</code></p>
+<p><code>list2 = [1, 2, 3, 4, 5, 6, 7 ]</code></p>
+<p><code>print &quot;list1[0]: &quot;, list1[0]</code></p>
+<p><code>print &quot;list2[1:5]: &quot;, list2[1:5]</code></p>
+<p>以上实例输出结果：</p>
+<p><code>list1[0]:  physics</code></p>
+<p><code>list2[1:5]:  [2, 3, 4, 5]</code></p>
+<p>#####更新列表<br>你可以对列表的数据项进行修改或更新，你也可以使用append()方法来添加列表项，如下所示：</p>
+<p><code>list = [] ## 空列表</code></p>
+<p><code>list.append(&#39;Google&#39;) ## 使用 append() 添加元素</code></p>
+<p><code>list.append(&#39;Runoob&#39;)</code></p>
+<p><code>print list</code></p>
+<p>以上实例输出结果：</p>
+<p><code>[&#39;Google&#39;, &#39;Runoob&#39;]</code></p>
+<p>#####删除列表元素<br>可以使用 del 语句来删除列表的元素，如下实例：</p>
+<p><code>list1 = [&#39;physics&#39;, &#39;chemistry&#39;, 1997, 2000]</code></p>
+<p><code>print list1</code></p>
+<p><code>del list1[2]</code></p>
+<p><code>print &quot;After deleting value at index 2 : &quot;</code></p>
+<p><code>print list1</code></p>
+<p>以上实例输出结果：</p>
+<p><code>[&#39;physics&#39;, &#39;chemistry&#39;, 1997, 2000]</code></p>
+<p><code>After deleting value at index 2 :</code></p>
+<p><code>[&#39;physics&#39;, &#39;chemistry&#39;, 2000]</code></p>
+<p>###0x3 Python中具体方法</p>
+<p>#####Python isnumeric()方法</p>
+<p>######描述<br>Python isnumeric() 方法检测字符串是否只由数字组成。这种方法是只针对unicode对象。<br>注：定义一个字符串为Unicode，只需要在字符串前添加 ‘u’ 前缀即可。</p>
+<p>######语法<br>isnumeric()方法语法： </p>
+<p>str.isnumeric()</p>
+<p>######返回值<br>如果字符串中只包含数字字符，则返回 True，否则返回 False</p>
+<p>######实例<br>以下实例展示了isnumeric()方法的实例：</p>
+<p><code>str = u&quot;this2009&quot;</code></p>
+<p><code>print str.isnumeric()</code></p>
+<p><code>str = u&quot;23443434&quot;</code></p>
+<p><code>print str.isnumeric()</code></p>
+<p>以上实例输出结果如下：</p>
+<p><code>False</code></p>
+<p><code>True</code></p>
+<p>#####Python3 index()方法</p>
+<p>######描述<br>index() 方法检测字符串中是否包含子字符串 str ，如果指定 beg（开始） 和 end（结束） 范围，则检查是否包含在指定范围内，该方法与 python find()方法一样，只不过如果str不在 string中会报一个异常。</p>
+<p>######语法<br>index()方法语法：</p>
+<p>str.index(str, beg=0, end=len(string))</p>
+<p>######参数</p>
+<ul>
+<li>str – 指定检索的字符串</li>
+<li>beg – 开始索引，默认为0。</li>
+<li>end – 结束索引，默认为字符串的长度。<br>######返回值<br>如果包含子字符串返回开始的索引值，否则抛出异常。<br>######实例<br>以下实例展示了index()方法的实例：</li>
+</ul>
+<p><code>str1 = &quot;Runoob example....wow!!!&quot;</code></p>
+<p><code>str2 = &quot;exam&quot;;</code></p>
+<p><code>print (str1.index(str2))</code></p>
+<p><code>print (str1.index(str2, 5))</code></p>
+<p><code>print (str1.index(str2, 10))</code></p>
+<p>以上实例输出结果如下(未发现的会出现异常信息)：</p>
+<p><code>7</code></p>
+<p><code>7</code></p>
+<p><code>Traceback (most recent call last):
+  File &quot;test.py&quot;, line 8, in &lt;module&gt;
+        print (str1.index(str2, 10))
+ValueError: substring not found</code></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://merser.top/2018/09/20/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="赵一屺">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ForeverLYJ">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/20/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-20T14:57:16+08:00">
+                2018-09-20
               </time>
             
 
@@ -336,7 +532,7 @@
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/10/13/hello-world/#more" rel="contents">
+            <a class="btn" href="/2018/09/20/hello-world/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -418,7 +614,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-04T07:07:13-07:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-04T07:07:13+08:00">
                 2017-10-04
               </time>
             
@@ -549,7 +745,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -619,7 +815,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
